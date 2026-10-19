@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2a5b">
+<title>당무위원회 의결 안건 (2026. 10. 21.)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --navy:#0b2a5b;--navy2:#143a75;--ac:#1a5dc8;--ac-soft:#eaf1fd;--ac-line:#c7daf7;
+  --bg:#f2f4f8;--card:#ffffff;--sub:#f5f6f9;--tx:#16202e;--tx2:#475266;--tx3:#727c8e;--bd:#e0e5ee;
+  --blue:#1f3fd1;--chip:#eef1f6;
+}
+@media (prefers-color-scheme:dark){:root{
+  --navy:#0d1d38;--navy2:#162b50;--ac:#6ea3f0;--ac-soft:#13284a;--ac-line:#24477c;
+  --bg:#0f1218;--card:#181c24;--sub:#1f242e;--tx:#e9edf3;--tx2:#c3cad6;--tx3:#8892a3;--bd:#2b3240;
+  --blue:#93b8ff;--chip:#252b37;
+}}
+html{font-size:100%;-webkit-text-size-adjust:100%}
+html.fs-s{font-size:93.75%}
+html.fs-l{font-size:112.5%}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:1rem;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere;letter-spacing:-0.01em}
+b,strong{font-weight:700}
+u{text-decoration-thickness:1.5px;text-underline-offset:4px}
+.bl{color:var(--blue)}
+
+header{background:var(--navy);color:#fff}
+.hd{max-width:960px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top)) 18px 20px}
+.eyebrow{display:inline-block;font-size:.8125rem;font-weight:600;color:#bcd3f7;letter-spacing:.02em}
+.hd h1{font-size:1.5rem;line-height:1.35;margin:6px 0 10px;font-weight:700;color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:.8125rem;padding:3px 10px;border-radius:999px;background:var(--navy2);color:#d9e5f8}
+.hd-row{display:flex;gap:8px;margin-top:16px;align-items:stretch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 16px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;font-size:.9375rem;font-weight:600;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn:active{transform:scale(.98)}
+.btn-pdf{flex:1;background:#fff;border-color:#fff;color:var(--navy)}
+@media (prefers-color-scheme:dark){.btn-pdf{background:#e9eef7;color:#0b2a5b}}
+.btn-ghost{background:transparent;border-color:#3d5f96;color:#fff}
+.fs{display:flex;border:1px solid #3d5f96;border-radius:12px;overflow:hidden}
+.fs button{min-width:42px;min-height:46px;border:0;background:transparent;color:#bcd3f7;font:inherit;font-weight:700;cursor:pointer}
+.fs button:nth-child(1){font-size:.8125rem}.fs button:nth-child(2){font-size:1rem}.fs button:nth-child(3){font-size:1.1875rem}
+.fs button.on{background:#fff;color:var(--navy)}
+
+nav{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--bd)}
+.tabs{max-width:960px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;display:flex;align-items:center;gap:7px;min-height:42px;padding:0 14px 0 6px;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--tx2);font:inherit;font-size:.875rem;font-weight:500;cursor:pointer;white-space:nowrap}
+.tab .no{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--chip);color:var(--tx2);font-size:.8125rem;font-weight:700}
+.tab.on{background:var(--ac-soft);border-color:var(--ac);color:var(--ac);font-weight:700}
+.tab.on .no{background:var(--ac);color:#fff}
+@media (prefers-color-scheme:dark){.tab.on .no{color:#0b1a2b}}
+
+main{max-width:960px;margin:0 auto;padding:16px 12px 24px}
+section.ag{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px 18px 18px;margin-bottom:14px}
+.ag-head{display:flex;gap:12px;align-items:flex-start}
+.ag-no{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.ag-no small{font-size:.6875rem;font-weight:600;color:#bcd3f7;margin-bottom:3px}
+.ag-no strong{font-size:1.125rem}
+@media (prefers-color-scheme:dark){.ag-no{background:var(--ac-soft);color:var(--ac)}.ag-no small{color:var(--ac)}}
+.ag h2{font-size:1.25rem;line-height:1.45;margin:0;font-weight:700}
+.meta{font-size:.875rem;color:var(--tx3);margin:4px 0 0}
+.ag h3{display:flex;align-items:center;gap:8px;font-size:1rem;font-weight:700;color:var(--tx);margin:28px 0 10px}
+.ag h3::before{content:"";width:4px;height:16px;background:var(--ac);border-radius:2px;flex:0 0 auto}
+.ag h3 em{font-style:normal;font-weight:500;color:var(--tx3);font-size:.875rem}
+.ag p{margin:0 0 8px}
+.lst{list-style:none;margin:0;padding:0}
+.lst li{position:relative;padding:10px 12px 10px 30px;border-radius:10px;background:var(--sub);margin-bottom:8px}
+.lst li::before{content:"";position:absolute;left:14px;top:21px;width:6px;height:6px;border-radius:50%;background:var(--ac)}
+.lst .sub{display:block;font-size:.9375rem;color:var(--tx2);margin-top:2px}
+
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8125rem;color:var(--tx2);margin:0 0 4px;padding:8px 12px;border-radius:10px;background:var(--sub)}
+.sect{font-size:.875rem;font-weight:700;color:var(--tx2);text-align:center;padding:6px 0;margin-top:10px;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+.cmp{display:grid;grid-template-columns:minmax(0,1fr);margin:12px 0 14px;font-size:.9375rem;line-height:1.75}
+.cmp>div{padding:12px 14px;white-space:pre-line}
+.cmp>div::before{display:inline-block;font-size:.75rem;font-weight:700;padding:1px 8px;border-radius:6px;margin-bottom:6px;white-space:normal;letter-spacing:0;text-decoration:none}
+.cmp .o{background:var(--sub);color:var(--tx2);border:1px solid var(--bd);border-radius:12px 12px 0 0;border-bottom:0}
+.cmp .o::before{content:"현행";background:var(--chip);color:var(--tx2)}
+.cmp .n{background:var(--card);color:var(--tx);border:1px solid var(--ac-line);border-radius:0 0 12px 12px}
+.cmp .n::before{content:"개정(案)";background:var(--ac);color:#fff}
+@media (prefers-color-scheme:dark){.cmp .n::before{color:#0b1a2b}}
+.cmp .o .bl,.cmp .n .bl{color:var(--blue)}
+
+.people{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.pp{border:1px solid var(--bd);border-radius:12px;padding:12px 14px;background:var(--card)}
+.pp .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pp .nm{font-weight:700;font-size:1.0625rem}
+.pp .rl{font-size:.8125rem;font-weight:600;color:var(--ac);background:var(--ac-soft);padding:1px 8px;border-radius:6px}
+.pp .tag{font-size:.75rem;font-weight:500;padding:1px 7px;border-radius:6px;background:var(--chip);color:var(--tx2)}
+.pp .cr{color:var(--tx2);font-size:.9375rem;margin-top:6px;white-space:pre-line;line-height:1.6}
+.ratio{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.ratio span{font-size:.8125rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--chip);color:var(--tx2)}
+.note{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px dashed var(--ac-line);font-size:.9375rem}
+
+.order{border:1px solid var(--ac-line);background:var(--ac-soft);border-radius:12px;padding:14px 16px;line-height:1.8}
+details{margin-top:20px;border:1px solid var(--bd);border-radius:12px;overflow:hidden}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:0 16px;font-size:.9375rem;font-weight:600;color:var(--tx2);background:var(--sub)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.25rem;font-weight:400;color:var(--tx3)}
+details[open] summary::after{content:"−"}
+.rule{font-size:.875rem;color:var(--tx2);white-space:pre-line;padding:12px 16px 16px;line-height:1.8}
+.rule b{color:var(--tx)}
+.rule .c{display:block;text-align:center}
+
+.pager{position:sticky;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--bd);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.pager-in{max-width:960px;margin:0 auto;display:flex;gap:8px;align-items:center}
+.pager .btn{flex:1}
+.pager .btn.pri{background:var(--navy);border-color:var(--navy);color:#fff}
+@media (prefers-color-scheme:dark){.pager .btn.pri{background:var(--ac);border-color:var(--ac);color:#0b1a2b}}
+.pos{min-width:56px;text-align:center;font-size:.875rem;font-weight:600;color:var(--tx3)}
+footer{text-align:center;font-size:.8125rem;color:var(--tx3);padding:4px 16px 28px}
+
+@media (min-width:720px){
+  .hd{padding-top:32px;padding-bottom:26px}.hd h1{font-size:1.75rem}
+  .btn-pdf{flex:0 0 auto}
+  main{padding:24px 16px 32px}
+  section.ag{padding:30px 32px 26px}
+  .cmp{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .cmp .o{border-radius:12px 0 0 12px;border-bottom:1px solid var(--bd);border-right:0}
+  .cmp .n{border-radius:0 12px 12px 0}
+}
+@media print{
+  nav,.hd-row,.pager{display:none!important}
+  section.ag{display:block!important;break-inside:auto;border:none}
+  body{background:#fff}
+  header{background:#fff;color:#000}.hd h1{color:#000}
+}
+.btn{white-space:nowrap}
+.tabwrap{position:relative;max-width:960px;margin:0 auto}
+.tabs{cursor:grab}
+.tabs.drag{cursor:grabbing}
+.tabs.drag .tab{pointer-events:none}
+.arr{position:absolute;top:0;bottom:0;width:52px;display:flex;align-items:center;border:0;padding:0 6px;cursor:pointer;color:var(--tx2);opacity:0;pointer-events:none;transition:opacity .15s;z-index:2}
+.arr.l{left:0;justify-content:flex-start;background:linear-gradient(to right,var(--card) 60%,transparent)}
+.arr.r{right:0;justify-content:flex-end;background:linear-gradient(to left,var(--card) 60%,transparent)}
+.arr.show{opacity:1;pointer-events:auto}
+.arr span{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;border:1px solid var(--bd);background:var(--card)}
+</style>
+</head>
+<body>
+
+<header><div class="hd">
+<span class="eyebrow">의결 안건 공유</span>
+<h1>당무위원회 의결 안건</h1>
+<div class="chips"><span>2026. 10. 21. 당무위원회</span><span>제25차 최고위원회의 부의</span><span>총 7건</span></div>
+<div class="hd-row">
+<a class="btn btn-pdf" id="pdfBtn" href="#" target="_blank" rel="noopener">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg>PDF 내려받기</a>
+<button class="btn btn-ghost" id="allBtn" type="button">전체 보기</button>
+</div>
+</div>
+</div></header>
+
+<nav aria-label="안건 목록"><div class="tabwrap">
+<button class="arr l" id="arrL" type="button" aria-label="앞쪽 안건 보기"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></span></button>
+<div class="tabs" id="tabs"></div>
+<button class="arr r" id="arrR" type="button" aria-label="뒤쪽 안건 보기"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></span></button>
+</div></nav>
+
+<main>
+
+<section class="ag" data-short="당무감사원 구성">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>1</strong></div><div><h2>당무감사원 구성의 건</h2></div></div>
+<h3>제안 사유</h3>
+<p>선출직 및 임명직 등 정무직·사무직 당직자에 대한 직무 감사와 감찰을 위하여 주요 내용과 같이 당무감사원을 구성해주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<div class="people"><div class="pp"><div class="top"><span class="nm">임호선</span><span class="rl">당무감사원장</span></div><div class="cr">現) 국회의원(재선, 충북 증평군진천군음성군)</div></div></div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제18조 및 당규 제5호 제115조 제2항에 따라, <b><u>주요 내용과 같이 당무감사원 구성(당무감사원장 : 임호선)을 의결함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다.
+1.~17. &lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u></b> &lt;개정 2026.8.11.&gt; &lt;이하 생략&gt;
+
+<b>제114조(당무감사원)</b> ①선출직 및 임명직 등의 정무직당직자와 사무직당직자에 대한 직무감사와 감찰을 위해 당무감사원(이하 '감사원'이라 한다)을 둔다.
+②감사원은 집행기관으로부터 분리하여 설치하며, 직무에 관하여는 독립의 지위를 갖는다.
+
+<b>[당규 제5호]</b> 중앙조직규정
+<b>제115조(구성)</b> <b><u>①감사원은 정기전국당원대회 개최일 후 3개월 이내에 당무위원회 의결로 구성한다.</u></b> &lt;개정 2024.6.12.&gt;
+<b><u>②당무감사원장은 당대표가 당무위원회의 의결을 거쳐 임명하고, 감사위원은 당무감사원장의 추천으로 당대표가 임명한다.</u></b>
+③~⑤ &lt;생략&gt;
+<b><u>⑥당무감사원장의 임기는 당무감사원 구성 후 2년으로 하되, 감사위원의 임기는 당무감사원장의 임기와 같이 한다.</u></b> 다만 당연직 위원은 그러하지 아니한다. &lt;이하 생략&gt;</div></details>
+</section>
+
+<section class="ag" data-short="조직강화특위">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>2</strong></div><div><h2>조직강화특별위원회 설치 및 구성의 건</h2></div></div>
+<h3>제안 사유</h3>
+<p>조직 정비를 위하여 주요 내용과 같이 조직강화특별위원회를 설치 및 구성해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<p><b>조직강화특별위원회 설치 및 구성(案)</b></p>
+<div class="ratio"><span>여성 : 3명(38%)</span><span>청년 : 2명(25%)</span><span>원외 : 3명(38%)</span></div>
+<div class="people">
+<div class="pp"><div class="top"><span class="nm">한정애</span><span class="rl">위원장</span><span class="tag">여성</span><span class="tag">당연직</span></div><div class="cr">현) 사무총장
+현) 국회의원(4선, 서울 강서구병)</div></div>
+<div class="pp"><div class="top"><span class="nm">안태준</span><span class="rl">부위원장</span><span class="tag">당연직</span></div><div class="cr">현) 조직사무부총장
+현) 국회의원(초선, 경기 광주시을)</div></div>
+<div class="pp"><div class="top"><span class="nm">양부남</span><span class="rl">위원</span><span class="tag">당연직</span></div><div class="cr">현) 중앙당 법률위원장
+현) 국회의원(초선, 전남광주 서구을)</div></div>
+<div class="pp"><div class="top"><span class="nm">박홍배</span><span class="rl">위원</span></div><div class="cr">현) 부산시당위원장
+현) 국회의원(초선, 비례대표)</div></div>
+<div class="pp"><div class="top"><span class="nm">전진숙</span><span class="rl">위원</span><span class="tag">여성</span></div><div class="cr">현) 국회의원(초선, 전남광주 북구을)</div></div>
+<div class="pp"><div class="top"><span class="nm">김한나</span><span class="rl">위원</span><span class="tag">여성</span><span class="tag">청년</span><span class="tag">원외</span></div><div class="cr">현) 서울 서초구갑 지역위원장</div></div>
+<div class="pp"><div class="top"><span class="nm">오상택</span><span class="rl">위원</span><span class="tag">원외</span></div><div class="cr">현) 울산 중구 지역위원장</div></div>
+<div class="pp"><div class="top"><span class="nm">김종우</span><span class="rl">위원</span><span class="tag">청년</span><span class="tag">원외</span></div><div class="cr">전) 충북도당 대학생위원장</div></div>
+</div>
+<div class="note"><b>권한 위임 요청(案)</b> : 이후의 원활한 추가 구성과 사·보임 처리를 위하여 조직강화특별위원회 구성 권한을 최고위원회로 위임함</div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조·제27조 및 당규 제11호(조직강화특별위원회규정) 제4조에 따라, <b><u>조직강화특별위원회를 설치 및 구성하고 이후의 구성 권한을 최고위원회로 위임함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다.
+1.~11. &lt;생략&gt;
+<b>12. <u>조직강화특별위원회의 구성</u></b>
+<b>18. <u>최고위원회가 부의한 사항의 처리</u></b> &lt;개정 2026.8.11.&gt;
+&lt;이하 생략&gt;
+
+<b>제27조(최고위원회의 권한)</b> 최고위원회는 다음 각 호의 권한을 갖는다.
+1. &lt;생략&gt;
+2. <b><u>주요 당무에 관한 심의·의결</u></b> &lt;이하 생략&gt;
+
+<b>[당규 제11호 조직강화특별위원회규정]</b>
+<b>제4조(구성)</b> ①조직강화특별위원회(이하 '위원회'라 한다)는 당무위원회의 의결로 설치한다.
+②<b><u>위원회는 사무총장, 조직담당사무부총장, 중앙당윤리심판원장이 지정하는 윤리위원 1명을 포함하여 15명 이하의 위원으로 구성</u></b>한다.
+③<b><u>조직강화특별위원장(이하 '위원장'이라 한다)은 사무총장이 맡고, 부위원장과 위원은 당대표가 최고위원회의 의결을 거쳐 당무위원회에 추천하고 당무위원회의 의결로 선임</u></b>한다.
+&lt;이하 생략&gt;</div></details>
+</section>
+
+<section class="ag" data-short="중앙조직규정 (1)">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>3</strong></div><div><h2>당규 제5호「중앙조직규정」개정의 건(1)</h2><p class="meta">중앙위원회 의장·부의장 임기 및 선출</p></div></div>
+<h3>제안 사유</h3>
+<p>중앙위원회 의장·부의장의 <b><u>임기 및 선출 절차를 명확히 하고자</u></b>, 당규 제5호「중앙조직규정」개정해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<ul class="lst">
+<li><b>① (임기)</b> 중앙위원회 의장·부의장 임기를 <b><u>다음 정기전국당원대회 이후 최초로 개최되는 중앙위원회에서 후임자가 선출되는 때까지</u></b>로 명확히 함</li>
+<li><b>② (선출)</b> 정기전국당원대회 이후 최초로 개최되는 중앙위원회에서 의장·부의장 <b><u>선출,</u></b> 의장 또는 부의장이 궐위된 경우 중앙위원회에서 후임자를 선출하고, 그 임기는 <b><u>전임자의 잔여임기로 함</u></b></li>
+<li><b>③ (조문 체계 정비)</b> 현행 제12조의 2(온라인투표에 의한 의결)는 <b><u>제12조의 4로 이동</u></b>하여 중앙위원회 의장·부의장 임기 및 선출 규정을 체계적으로 배치함</li>
+</ul>
+<h3>신·구조문 대비표</h3>
+<div class="legend"><span>원문 서식 그대로 표시했습니다.</span><span><b class="bl">파란 글씨</b> 신설·변경 부분</span></div>
+<div class="sect">당규제5호 중앙조직규정</div>
+<div class="cmp"><div class="o"><b class="bl">&lt;신설&gt;</b></div><div class="n"><b class="bl">제12조의2(의장·부의장의 임기)</b> <span class="bl">①중앙위원회 의장과 부의장의 임기는 다음 정기전국당원대회 이후 최초로 개최되는 중앙위원회에서 의장과 부의장이 새로 선출되는 때까지로 한다.
+②보궐선거로 선출되는 의장 또는 부의장의 임기는 전임자의 잔여임기로 한다.
+③의장이 유고되거나 궐위된 때에는 부의장 중 연장자 순으로 그 직무를 대행한다.</span>
+<b class="bl">제12조의3(의장·부의장의 선출)</b> <span class="bl">①중앙위원회 의장과 부의장은 정기전국당원대회 이후 최초로 개최되는 중앙위원회에서 선출한다.
+②의장 또는 부의장이 궐위된 때에는 중앙위원회에서 후임자를 선출한다.
+③의장과 부의장은 온라인투표 방식으로 선출할 수 있다.</span></div></div>
+<div class="cmp"><div class="o"><b>제12조의2(온라인투표에 의한 의결)</b> ①중앙위원회는 다음 각 호의 어느 하나에 해당할 때에는 당 플랫폼 등 온라인 투표에 의하여 의결 할 수 있다.
+1. 중앙위원회에서 온라인 투표에 의하여 결정하기로 의결한 사항
+2. 긴급한 사정이나 그 밖에 부득이한 사유가 있어 의장이나 당무위원회가 온라인 투표에 의할 것으로 정한 사항
+②온라인 투표에 의해 당헌을 개정할 경우 재적구성원 과반수 이상의 참여와 재적 과반수의 찬성으로 의결한다.
+③비례대표국회의원선거후보자 추천을 위한 순위투표 등 선출을 위한 투표는 당해 선거관리위원회의 결정에 따른다.
+④온라인 투표 준비에 필요한 사항은 사무총장이 총괄한다. [본조신설 2020.3.12.]</div><div class="n"><b>제12조의2→4(온라인투표에 의한 의결)</b> ①중앙위원회는 다음 각 호의 어느 하나에 해당할 때에는 당 플랫폼 등 온라인 투표에 의하여 의결 할 수 있다.
+1. 중앙위원회에서 온라인 투표에 의하여 결정하기로 의결한 사항
+2. 긴급한 사정이나 그 밖에 부득이한 사유가 있어 의장이나 당무위원회가 온라인 투표에 의할 것으로 정한 사항
+②온라인 투표에 의해 당헌을 개정할 경우 재적구성원 과반수 이상의 참여와 재적 과반수의 찬성으로 의결한다.
+③비례대표국회의원선거후보자 추천을 위한 순위투표 등 선출을 위한 투표는 당해 선거관리위원회의 결정에 따른다.
+④온라인 투표 준비에 필요한 사항은 사무총장이 총괄한다. [본조신설 2020.3.12.]</div></div>
+<div class="cmp"><div class="o"><b class="bl">&lt;신설&gt;</b></div><div class="n"><b class="bl">부칙 &lt;2026. 10. 21, 제27호&gt;</b>
+<b class="bl">제1조(시행일)</b> <span class="bl">이 규정은 2026년 10월 21일 당무위원회가 의결한 이후부터 시행한다.</span></div></div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제5호 및 제18호에 따라, <b><u>주요 내용과 같이 당규 제5호「중앙조직규정」을 개정함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제19조(지위와 구성)</b> ①중앙위원회는 전국당원대회의 수임기관이다. &lt;개정 2024.6.17.&gt;
+②중앙위원회는 다음 각 호에 따라 800명 이하의 위원으로 구성한다.
+1. ~ 28. &lt;생략&gt;
+<b><u>③중앙위원회에 의장 1명과 부의장 2명을 둔다</u></b>. &lt;이하 생략&gt;
+
+<b>제20조(권한)</b> ①중앙위원회는 다음 각 호의 권한을 갖는다. &lt;생략&gt;
+<b>6. <u>의장과 부의장의 선출</u></b> &lt;이하 생략&gt;
+
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다. &lt;생략&gt;
+<b>5. <u>당규의 제정과 개폐</u></b> &lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u> &lt;개정 2026.8.11.&gt;</b> &lt;이하 생략&gt;
+②당무위원회는 권한을 구체적으로 명시하여 당대표 또는 최고위원회에 위임할 수 있다.
+
+<b>[당규제5호 중앙조직규정]</b>
+<b>제12조의2(온라인투표에 의한 의결)</b> ①중앙위원회는 <b><u>다음 각 호의 어느 하나에 해당할 때에는 당 플랫폼 등 온라인 투표에 의하여 의결 할 수 있다</u></b>.
+1. 중앙위원회에서 온라인 투표에 의하여 결정하기로 의결한 사항
+2. 긴급한 사정이나 그 밖에 부득이한 사유가 있어 의장이나 당무위원회가 온라인 투표에 의할 것으로 정한 사항 &lt;생략&gt;
+④온라인 투표 준비에 필요한 사항은 사무총장이 총괄한다. [본조신설 2020.3.12.]</div></details>
+</section>
+
+<section class="ag" data-short="중앙조직규정 (2)">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>4</strong></div><div><h2>당규 제5호「중앙조직규정」개정의 건(2)</h2><p class="meta">참좋은지방정부위원회 상임부위원장·부위원장 직제 신설</p></div></div>
+<h3>제안 사유</h3>
+<p>지방정부·지방의회와의 소통·협력을 강화하고 위원회 운영의 효율성을 제고하기 위하여, <b>참좋은지방정부위원회</b>(위원장 염태영)에 <b>상임부위원장 및 부위원장 직제</b>를 <b>신설</b>해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<ul class="lst"><li><b>상임부위원장 및 부위원장 직제 신설</b><span class="sub">- 상임부위원장·부위원장의 구성 및 임명 근거를 마련하고, 상임위원회 및 운영위원회 구성에 관한 사항을 정비</span></li></ul>
+<h3>신·구조문 대비표</h3>
+<div class="legend"><span>원문 서식 그대로 표시했습니다.</span><span><b class="bl">파란 글씨</b> 신설·변경 부분</span></div>
+<div class="sect">당규 제5호 중앙조직규정</div>
+<div class="cmp"><div class="o"><b>제55조(참좋은지방정부위원회)</b> ①지방정부 및 지방의회와의 협력강화, 지원확대 및 관리 등을 위하여 최고위원회 아래에 참좋은지방정부위원회를 둔다.
+②참좋은지방정부위원회는 위원장, 당 소속 시·도지사, 자치구·시·군의 장, 시·도의원, 자치구·시·군의원, 시·도당자치분권위원장, 상임위원 및 정책자문위원으로 구성한다.
+③참좋은지방정부위원회의 위원장은 당대표가 최고위원회와 협의를 거쳐 임명하고, 상임위원 및 정책자문위원은 위원장의 추천으로 당대표가 임명한다.
+④참좋은지방정부위원회는 상임위원회와 정책자문위원회로 구성된다. 상임위원회는 위원회의 주요 사업을 심의·의결하고 정책자문위원회는 자치분권 관련 정책 자문을 담당한다.
+<b>&lt;신설&gt;</b>
+⑤참좋은지방정부위원회는 고위 자치분권당정협의회, 광역 자치분권당정협의회 및 기초 자치분권당정협의회를 정례적으로 개최할 수 있다.</div>
+<div class="n"><b>제55조(참좋은지방정부위원회)</b> ①지방정부 및 지방의회와의 협력강화, 지원확대 및 관리 등을 위하여 최고위원회 아래에 참좋은지방정부위원회를 둔다.
+②참좋은지방정부위원회는 위원장, 당 소속 시·도지사, 자치구·시·군의 장, 시·도의원, 자치구·시·군의원, 시·도당자치분권위원장, <b class="bl"><u>상임부위원장, 부위원장</u></b>, 상임위원 및 정책자문위원으로 구성한다.
+③참좋은지방정부위원회의 위원장은 당대표가 최고위원회와 협의를 거쳐 임명하고, <b class="bl"><u>상임부위원장, 부위원장</u></b>, 상임위원, 정책자문위원은 위원장의 추천으로 당대표가 임명한다.
+④참좋은지방정부위원회는 상임위원회와 정책자문위원회를 <b class="bl"><u>두며, 상임위원회는 위원장, 상임부위원장, 부위원장 및 상임위원으로 구성하고, 정책자문위원회는 정책자문위원으로 구성한다.</u></b> 상임위원회는 위원회의 주요 사업을 <u>심의</u>하고 정책자문위원회는 자치분권 관련 정책에 관한 자문을 담당한다.
+<b class="bl"><u>⑤위원회의 원활한 운영을 위하여 위원장, 상임부위원장 및 부위원장으로 구성하는 운영위원회를 둔다. 운영위원회는 위원회 운영에 관한 주요 사항을 협의·조정한다</u></b>.
+⑤→<b class="bl">⑥</b>참좋은지방정부위원회는 고위 자치분권당정협의회, 광역 자치분권당정협의회 및 기초 자치분권당정협의회를 정례적으로 개최할 수 있다.</div></div>
+
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제5호 및 제18호에 따라, <b><u>주요 내용과 같이 당규 제5호「중앙조직규정」을 개정함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다.&lt;생략&gt;
+<b>5. <u>당규의 제정과 개폐</u></b>&lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u></b> &lt;개정 2026.8.11.&gt; &lt;이하 생략&gt;
+②당무위원회는 권한을 구체적으로 명시하여 당대표 또는 최고위원회에 위임할 수 있다.
+
+<b>[당규 제5호 중앙조직규정]</b>
+<b>제2조(중앙당의 구성)</b> ①중앙당은 다음 각 호의 기관 및 기구로 구성한다.&lt;이하 생략&gt;
+<b>나. 상설위원회</b> : 당무감사원, 국가경제자문회의, 외교안보통일자문회의, 중앙당자치분권정책협의회, 세계한인민주회의(재외동포위원회), 국제위원회, 전국직능대표자회의, 민생연석회의, <b><u>참좋은지방정부위원회</u></b>, 당헌당규강령위원회, 인권위원회, 다문화위원회, 교육연수원, 재정위원회, 예산결산위원회, 청년미래연석회의, 인재위원회, 탄소중립위원회 &lt;개정 2020.8.19., 2022.8.19., 2024.8.5.&gt; &lt;이하 생략&gt;</div></details>
+</section>
+
+<section class="ag" data-short="중앙조직규정 (3)">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>5</strong></div><div><h2>당규 제5호「중앙조직규정」개정의 건(3)</h2><p class="meta">중앙당후원회 규정 신설</p></div></div>
+<h3>제안 사유</h3>
+<p>당헌 제58조는 중앙당후원회의 구성과 운영에 필요한 사항을 당규 및 후원회 정관으로 정하도록 규정함에 따라, 이에 대한 기본사항을 당규에 마련해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<ul class="lst">
+<li><b>① 중앙당후원회 지정·구성 및 운영체계 마련</b><span class="sub">- 후원회 지정, 후원회장 선임, 운영계획 수립 및 최고위원회 보고에 관한 사항 규정</span></li>
+<li><b>② 회계·감사 및 사무운영 기준 마련</b><span class="sub">- 회계보고·감사 절차와 후원회 사무국 설치, 중앙당 사무처의 관리·점검 근거 규정</span></li>
+<li><b>③ 세부 운영사항의 정관 위임</b><span class="sub">- 후원회 운영에 필요한 세부사항은 관계 법령 및 당헌·당규 범위 내에서 정관으로 정하도록 함</span></li>
+</ul>
+<h3>신·구조문 대비표</h3>
+<div class="legend"><span>원문 서식 그대로 표시했습니다.</span><span><b class="bl">파란 글씨</b> 신설·변경 부분</span></div>
+<div class="sect">당규 제5호 중앙조직규정</div>
+<div class="cmp"><div class="o"><b>제1조(목적)</b> 이 규정은 당헌 제3장(대의기관)·제4장(집행기관)·제5장(원내기구)·제6장(정책연구소)·제9장(윤리심판원) 및 제10장(예산과 회계)의 규정에 의거하여 중앙당의 기구와 업무분장 및 기타 운영에 필요한 사항의 규정을 목적으로 한다.</div><div class="n"><b>제1조(목적)</b> 이 규정은 당헌 제3장(대의기관)·제4장(집행기관)·제5장(원내기구)·제6장(정책연구소)·<b class="bl">제7장(중앙당후원회)</b>·제9장(윤리심판원) 및 제10장(예산과 회계)의 규정에 의거하여 중앙당의 기구와 업무분장 및 기타 운영에 필요한 사항의 규정을 목적으로 한다.</div></div>
+<div class="sect bl">제7장 중앙당후원회</div>
+<div class="cmp"><div class="o"><b>&lt;신설&gt;</b></div><div class="n"><b class="bl">제1조(지정 및 구성)</b>
+<span class="bl">①당대표는 당헌 제58조에 따라 중앙당에 후원금을 기부할 목적으로 하는 중앙당후원회를 지정할 수 있다.
+②중앙당후원회장은 당대표가 지명하고, 후원회 정관이 정하는 절차에 따라 선임한다.
+③중앙당후원회의 구성 및 운영에 관한 사항은 후원회 정관에 따른다.</span>
+<b class="bl">제2조(운영계획 및 보고)</b>
+<span class="bl">①중앙당후원회는 연 1회 이상 후원회 운영 및 후원금 모금에 관한 기본계획을 수립하여야 한다.
+②중앙당후원회는 제1항의 기본계획을 최고위원회에 보고하여야 한다.
+③중앙당후원회는 회계연도별 결산 및 후원금 모금 결과를 최고위원회에 보고하여야 한다.</span>
+<b class="bl">제3조(회계 및 감사)</b>
+<span class="bl">① 중앙당후원회는 관계 법령 및 정관에 따라 회계보고 및 감사를 실시하여야 한다.
+②중앙당후원회는 제1항에 따른 감사 결과를 최고위원회에 보고하여야 한다.</span>
+<b class="bl">제4조(사무국 및 운영관리)</b>
+<span class="bl">①중앙당후원회는 사무를 처리하기 위하여 관계 법령 및 정관이 정하는 바에 따라 사무국을 둘 수 있다.
+②중앙당 사무처는 중앙당후원회의 원활한 사무 운영을 위하여 필요한 범위에서 사무국의 운영 및 사무처리에 관한 사항을 관리·점검할 수 있다.</span>
+<b class="bl">제5조(정관)</b>
+<span class="bl">①중앙당후원회의 구성 및 운영에 필요한 세부사항은 후원회 정관으로 정한다.
+②제1항의 정관은 관계 법령 및 당헌·당규에 위반되어서는 아니 되며, 정관의 변경 시 중앙당 사무처의 협의를 거쳐 최고위원회에 보고하여야 한다.</span></div></div>
+<div class="cmp"><div class="o"><b>&lt;신설&gt;</b></div><div class="n"><b>부칙 &lt;2026. 10. 21, 제28호&gt;</b>
+<b class="bl">제1조(시행일)</b> <span class="bl">이 규정은 2026년 10월 21일 당무위원회가 의결한 이후부터 시행한다.</span></div></div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제5호 및 제18호에 따라, <b><u>주요 내용과 같이 당규 제5호「중앙조직규정」을 개정함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다.&lt;생략&gt;
+<b>5. <u>당규의 제정과 개폐</u></b> &lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u></b> &lt;개정 2026.8.11.&gt; &lt;이하 생략&gt;
+②당무위원회는 권한을 구체적으로 명시하여 당대표 또는 최고위원회에 위임할 수 있다.
+
+<b>제58조(지정)</b> <b><u>①당대표는 중앙당에 후원금 기부를 목적으로 하는 중앙당후원회를 지정할 수 있다</u></b>.
+<b><u>②중앙당후원회의 구성과 운영에 필요한 사항은 당규 및 후원회의 정관으로 정한다.</u></b></div></details>
+</section>
+
+<section class="ag" data-short="중앙조직규정 (4)">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>6</strong></div><div><h2>당규 제5호「중앙조직규정」개정의 건(4)</h2><p class="meta">디지털전략국 명칭 변경 및 홍보국 업무분장 정비</p></div></div>
+<h3>제안 사유</h3>
+<p>당규 제5호 제81조에 따른 사무처의 업무편제를 명확히 하고자, 당규 제5호「중앙조직규정」개정해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<ul class="lst">
+<li>① 사무처 조직체계 정비에 따라 '디지털전략실'을 <b>'디지털전략국'으로 명칭 변경</b></li>
+<li><b>② 홍보국과 디지털전략국 간 업무분장 정비</b><span class="sub">- 기존 디지털전략국에서 담당하는 영상홍보물 기획 및 제작 업무를 홍보국 소관으로 이동</span></li>
+</ul>
+<h3>신·구조문 대비표</h3>
+<div class="legend"><span>원문 서식 그대로 표시했습니다.</span><span><b class="bl">파란 글씨</b> 신설·변경·이동 부분</span></div>
+<div class="sect">당규제5호 중앙조직규정</div>
+<div class="cmp"><div class="o"><b>제96조(홍보국)</b> ①홍보국은 홍보위원장의 지시를 받아 당의 이념, 정강·정책 및 당 활동의 홍보에 관한 업무를 담당한다. &lt;개정 2020.12.11., 2022.9.19.&gt;
+②홍보국은 다음 사항을 분장한다. &lt;개정 2020.12.11., 2022.9.19.&gt;
+1. 당의 장·단기 홍보 전략의 수립 및 홍보기획 등에 관한 사항
+2. 당 기관지 및 기타 간행물의 편집, 제작, 배송, 보관 등에 관한 사항
+3. 당의 광고에 관한 사항
+4. 방송연설의 지원 및 대책수립에 관한 사항
+5. 기타 홍보 업무에 관한 사항
+[종전 제96조 제2항 제6호, 제7호, 제8호, 제9호, 제10호는 제96조의2 제2항으로 이동 &lt;2022.9.19.&gt;]</div><div class="n"><b>제96조(홍보국)</b> ①홍보국은 홍보위원장의 지시를 받아 당의 이념, 정강·정책 및 당 활동의 홍보에 관한 업무를 담당한다. &lt;개정 2020.12.11., 2022.9.19.&gt;
+②홍보국은 다음 사항을 분장한다. &lt;개정 2020.12.11., 2022.9.19.&gt;
+1. 당의 장·단기 홍보 전략의 수립 및 홍보기획 등에 관한 사항
+2. 당 기관지 및 기타 간행물의 편집, 제작, 배송, 보관 등에 관한 사항
+3. 당의 광고에 관한 사항
+4. 방송연설의 지원 및 대책수립에 관한 사항
+<b class="bl">5. 뉴미디어를 통한 홍보기획 및 사업에 관한 사항
+6. 영상홍보물 기획과 제작에 관한 사항
+7. 당의 사진·영상자료 촬영 및 정리·운영에 관한 사항
+8. 기타 홍보 업무에 관한 사항
+[종전 제96조 제2항 제6호, 제7호, 제8호, 제9호, 제10호는 제96조의2 제2항으로 이동 &lt;2022.9.19.&gt;]</b></div></div>
+<div class="cmp"><div class="o"><b>제96조의2(디지털전략실)</b>①디지털전략실은 제77조제4항의 업무를 전담하는 사무부총장의 지시를 받아 스마트정당 실현과 당의 플랫폼 구축 등 정당현대화 및 디지털소통 업무를 담당한다. &lt;개정 2022.9.19.&gt;
+②디지털전략실은 다음 사항을 분장한다. &lt;개정 2022.9.19.&gt;
+1. 디지털전략 수립 및 사업기획에 관한 사항
+2. 온라인 네트워크 관리·운영에 관한 사항
+3. 온라인 지지자의 소통·조직에 관한 사항
+4. &lt;삭제 2026.8.3.&gt;
+<b class="bl">5. 디지털매체 및 뉴미디어를 통한 홍보기획 및 사업에 관한 사항</b>
+6. 스마트정당 및 AI정당에 관한 기획 및 구축에 관한 사항 &lt;개정 2026.8.3.&gt;
+7. 당 공식 홈페이지 및 디지털매체 관리·운영에 관한 사항
+8. &lt;삭제 2024.8.5.&gt;
+9. &lt;삭제 2026.8.3.&gt;
+10. 당무 온라인화에 관한 사항
+11. &lt;삭제 2024.8.5.&gt;
+12. &lt;삭제 2026.8.3.&gt;
+13. &lt;삭제 2026.8.3.&gt;
+<b class="bl">14. 영상홍보물 기획과 제작에 관한 사항
+15. 당의 사진·영상자료 촬영 및 정리·운영에 관한 사항</b>
+16. 온라인 당원청원시스템 구축에 관한 사항 &lt;신설 2022.8.19.&gt;
+17. 기타 디지털미디어 및 플랫폼에 관한 사항 &lt;개정 2026.8.3.&gt;
+18. &lt;삭제 2024.8.5.&gt;
+[종전 제96조 제2항 제6호, 제7호, 제8호, 제9호, 제10호는 제96조의2 제2항으로 이동 &lt;2022.9.19.&gt;]</div><div class="n"><b>제96조의2(디지털전략<span class="bl">국</span>)</b>①디지털전략<span class="bl">국</span>은 제77조제4항의 업무를 전담하는 사무부총장의 지시를 받아 스마트정당 실현과 당의 플랫폼 구축 등 정당현대화 및 디지털소통 업무를 담당한다. &lt;개정 2022.9.19.&gt;
+②디지털전략<span class="bl">국</span>은 다음 사항을 분장한다. &lt;개정 2022.9.19.&gt;
+1. 디지털전략 수립 및 사업기획에 관한 사항
+2. 온라인 네트워크 관리·운영에 관한 사항
+3. 온라인 지지자의 소통·조직에 관한 사항
+4. &lt;삭제 2026.8.3.&gt;
+<b class="bl">5. &lt;삭제 2026.10.21.&gt;</b>
+6. 스마트정당 및 AI정당에 관한 기획 및 구축에 관한 사항 &lt;개정 2026.8.3.&gt;
+7. 당 공식 홈페이지 및 디지털매체 관리·운영에 관한 사항
+8. &lt;삭제 2024.8.5.&gt;
+9. &lt;삭제 2026.8.3.&gt;
+10. 당무 온라인화에 관한 사항
+11. &lt;삭제 2024.8.5.&gt;
+12. &lt;삭제 2026.8.3.&gt;
+13. &lt;삭제 2026.8.3.&gt;
+<b class="bl">14. &lt;삭제 2026.10.21.&gt;
+15. &lt;삭제 2026.10.21.&gt;</b>
+16. 온라인 당원청원시스템 구축에 관한 사항 &lt;신설 2022.8.19.&gt;
+17. 기타 디지털미디어 및 플랫폼에 관한 사항 &lt;개정 2026.8.3.&gt;
+18. &lt;삭제 2024.8.5.&gt;
+[종전 제96조 제2항 제6호, 제7호, 제8호, 제9호, 제10호는 제96조의2 제2항으로 이동 &lt;2022.9.19.&gt;]</div></div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제5호 및 제18호에 따라, <b><u>주요 내용과 같이 당규 제5호「중앙조직규정」을 개정함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다. &lt;생략&gt;
+<b>5. <u>당규의 제정과 개폐</u></b> &lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u> &lt;개정 2026.8.11.&gt;</b> &lt;이하 생략&gt;
+②당무위원회는 권한을 구체적으로 명시하여 당대표 또는 최고위원회에 위임할 수 있다.</div></details>
+</section>
+
+<section class="ag" data-short="당규 제4·10호 부칙">
+<div class="ag-head"><div class="ag-no"><small>안건</small><strong>7</strong></div><div><h2>당규 제4호 및 제10호 부칙 개정의 건</h2></div></div>
+<h3>제안 사유</h3>
+<p>당헌 부칙 제23호와 연계된 당규 규정이 오편입되어 있어, 이를 바로잡아 당규 체계 및 개정이력을 정비하고자 당규 부칙을 개정해 주실 것을 요청함</p>
+<p class="meta">(※제25차 최고위원회의(26.10.19.)에서 부의)</p>
+<h3>주요 내용</h3>
+<ul class="lst">
+<li><b>① 당규 제4호「당직선출규정」에 중복·오편입된 부칙 삭제</b><span class="sub">- 부칙 &lt;2026.6.16., 제27호&gt; : 제9회 지방선거 승리 기여에 대한 특례</span></li>
+<li><b>② 당규 제10호「공직선거후보자추천및선출직공직자평가위원회규정」부칙 수정 및 편입</b><span class="sub">- 부칙 &lt;2026.6.16., 제27호&gt; : 제9회 지방선거 승리 기여에 대한 특례</span></li>
+</ul>
+<h3>신·구조문 대비표</h3>
+<div class="legend"><span>원문 서식 그대로 표시했습니다.</span><span><b class="bl">파란 글씨</b> 신설·변경 부분</span></div>
+<div class="sect">당규제4호 당직선출규정</div>
+<div class="cmp"><div class="o">부칙 &lt;2026.06.16, 제27호&gt;
+제1조(시행일) 이 당규는 중앙위원회에서 의결한 날부터 시행한다.
+제2조(제9회 지방선거 승리 기여에 대한 특례) 제17조제3항제2~3호 및 제35조제3항·제4항에도 불구하고 제9회 지선 공정공천, 경선존중 실천 여부를 평가하여 향후 달리 반영할 수 있다.
+제3조(위임) 제2조의 특례 적용을 위한 구체적인 사항은 최고위원회의 의결로 정한다.</div><div class="n"><span class="bl">부칙 &lt;2026.06.16., 제27호&gt; &lt;삭제 2026.10.21&gt;</span></div></div>
+<div class="cmp"><div class="o">부칙 &lt;2026. 7.14, 제28호&gt;
+이 규정은 2026년 7월 14일 당무위원회가 의결한 이후부터 시행한다</div><div class="n">부칙 &lt;2026. 7.14, 제28호&gt;
+이 규정은 2026년 7월 14일 당무위원회가 의결한 이후부터 시행한다.</div></div>
+<div class="cmp"><div class="o">부칙 &lt;2026. 8. 3, 제28호&gt;
+이 규정은 2026년 8월 3일 당무위원회가 의결한 이후부터 시행한다.</div><div class="n">부칙 &lt;2026. 8. 3, <b class="bl">제29호</b>&gt;
+이 규정은 2026년 8월 3일 당무위원회가 의결한 이후부터 시행한다.</div></div>
+<div class="sect">당규제10호 공직선거후보자추천및선출직공직자평가위원회규정</div>
+<div class="cmp"><div class="o"><b>&lt;신설&gt;</b></div><div class="n">부칙 &lt;2026.10.21, <b class="bl">제28호</b>&gt;
+<span class="bl">제1조(제9회 지방선거 승리 기여에 대한 특례) 제17조제3항제2~3호 및 제35조제3항·제4항에도 불구하고 제9회 지선 공정공천, 경선존중 실천 여부를 평가하여 향후 달리 반영할 수 있다.
+제2조(위임) 제1조의 특례 적용을 위한 구체적인 사항은 최고위원회의 의결로 정한다.</span></div></div>
+<h3>의결 주문</h3>
+<div class="order">당헌 제23조 제1항 제18호에 따라, <b><u>당규 제4호「당직선출규정」및 당규 제10호「공직선거후보자추천및선출직공직자평가위원회규정」의 부칙을 개정함</u></b></div>
+<details><summary>관련 규정 보기</summary><div class="rule"><b>[당헌]</b>
+<b>제23조(권한)</b> ①당무위원회는 다음 각 호의 권한을 갖는다. &lt;생략&gt;
+5. 당규의 제정과 개폐 &lt;생략&gt;
+<b>18. <u>최고위원회가 부의한 사항의 처리</u> &lt;개정 2026.8.11.&gt;</b> &lt;이하 생략&gt;
+②당무위원회는 권한을 구체적으로 명시하여 당대표 또는 최고위원회에 위임할 수 있다.
+
+<b class="c">부칙 &lt;2026. 6. 16, 제23호&gt;</b><b>제1조(시행일)</b> 이 당헌은 중앙위원회에서 의결한 날부터 시행한다.
+<b>제2조(제9회 지방선거 승리 기여에 대한 특례)</b> 제100조제3항 및 제101조에도 불구하고 공천 불복 경력자, 탈당 경력자, 징계경력자의 경선 감산의 경우에는 제9회 지선 공정공천, 경선존중 실천 여부를 평가하여 향후 달리 반영할 수 있다.
+<b>제3조(위임)</b> 제2조의 특례 적용을 위한 구체적인 사항은 최고위원회의 의결로 정한다.</div></details>
+</section>
+
+<footer>원본 자료는 상단의 PDF 내려받기 버튼으로 확인할 수 있습니다.</footer>
+</main>
+
+<div class="pager" id="pager"><div class="pager-in">
+<button class="btn" id="prev" type="button">← 이전</button>
+<span class="pos" id="pos"></span>
+<button class="btn pri" id="next" type="button">다음 →</button>
+</div></div>
+
+<script>
+const PDF_URL = '20261021_당무위원회_의결안건.pdf';
+
+const pdf = document.getElementById('pdfBtn');
+pdf.href = PDF_URL;
+
+const secs = [...document.querySelectorAll('section.ag')];
+const tabs = document.getElementById('tabs');
+const arrL = document.getElementById('arrL');
+const arrR = document.getElementById('arrR');
+const allBtn = document.getElementById('allBtn');
+const pager = document.getElementById('pager');
+let cur = 0, all = false;
+
+const tabBtns = secs.map((s, i) => {
+  const b = document.createElement('button');
+  b.className = 'tab';
+  b.type = 'button';
+  b.innerHTML = '<span class="no">' + (i + 1) + '</span>' + s.dataset.short;
+  b.onclick = () => go(i);
+  tabs.appendChild(b);
+  return b;
+});
+
+function updateArrows() {
+  const max = tabs.scrollWidth - tabs.clientWidth;
+  arrL.classList.toggle('show', tabs.scrollLeft > 4);
+  arrR.classList.toggle('show', tabs.scrollLeft < max - 4);
+}
+
+function centerTab(t, smooth) {
+  const tr = t.getBoundingClientRect();
+  const cr = tabs.getBoundingClientRect();
+  const target = tabs.scrollLeft + (tr.left - cr.left) - (cr.width - tr.width) / 2;
+  tabs.scrollTo({left: Math.max(0, target), behavior: smooth ? 'smooth' : 'instant'});
+  updateArrows();
+}
+
+arrL.onclick = () => tabs.scrollBy({left: -tabs.clientWidth * 0.7, behavior: 'smooth'});
+arrR.onclick = () => tabs.scrollBy({left: tabs.clientWidth * 0.7, behavior: 'smooth'});
+tabs.addEventListener('scroll', updateArrows, {passive: true});
+window.addEventListener('resize', updateArrows);
+
+tabs.addEventListener('wheel', e => {
+  if (tabs.scrollWidth <= tabs.clientWidth) return;
+  if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+    tabs.scrollLeft += e.deltaY;
+    e.preventDefault();
+  }
+}, {passive: false});
+
+let dragX = null, dragLeft = 0, moved = false, suppress = false;
+tabs.addEventListener('pointerdown', e => {
+  if (e.pointerType !== 'mouse' || e.button !== 0) return;
+  dragX = e.clientX; dragLeft = tabs.scrollLeft; moved = false;
+});
+window.addEventListener('pointermove', e => {
+  if (dragX === null) return;
+  const dx = e.clientX - dragX;
+  if (!moved && Math.abs(dx) > 5) { moved = true; tabs.classList.add('drag'); }
+  if (moved) tabs.scrollLeft = dragLeft - dx;
+});
+window.addEventListener('pointerup', () => {
+  if (dragX === null) return;
+  if (moved) suppress = true;
+  dragX = null;
+  tabs.classList.remove('drag');
+  setTimeout(() => suppress = false, 0);
+});
+tabs.addEventListener('click', e => {
+  if (suppress) { e.stopPropagation(); e.preventDefault(); }
+}, true);
+
+function render(scroll) {
+  secs.forEach((s, j) => s.style.display = (all || j === cur) ? '' : 'none');
+  tabBtns.forEach((b, j) => b.classList.toggle('on', !all && j === cur));
+  allBtn.textContent = all ? '안건별 보기' : '전체 보기';
+  pager.style.display = all ? 'none' : '';
+  document.getElementById('pos').textContent = (cur + 1) + ' / ' + secs.length;
+  document.getElementById('prev').style.visibility = cur === 0 ? 'hidden' : 'visible';
+  document.getElementById('next').style.visibility = cur === secs.length - 1 ? 'hidden' : 'visible';
+  if (!all) centerTab(tabBtns[cur], scroll);
+  else updateArrows();
+  if (scroll) {
+    const navTop = document.querySelector('nav').offsetTop;
+    if (window.scrollY > navTop) window.scrollTo({top: navTop, behavior: 'smooth'});
+  }
+}
+
+function go(i) {
+  all = false;
+  cur = Math.max(0, Math.min(secs.length - 1, i));
+  history.replaceState(null, '', '#' + (cur + 1));
+  render(true);
+}
+
+allBtn.onclick = () => { all = !all; history.replaceState(null, '', all ? '#all' : '#' + (cur + 1)); render(true); };
+document.getElementById('prev').onclick = () => go(cur - 1);
+document.getElementById('next').onclick = () => go(cur + 1);
+
+const h = location.hash.replace('#', '');
+if (h === 'all') all = true;
+else if (+h >= 1 && +h <= secs.length) cur = +h - 1;
+render(false);
+
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => { if (!all) centerTab(tabBtns[cur], false); else updateArrows(); });
+}
+</script>
+</body>
+</html>
